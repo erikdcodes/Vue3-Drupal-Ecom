@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 150ms ease-in-out;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-grey);
+}
+
+h1,
+h2,
+h3 {
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--color-black);
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: clamp(1.75rem, 5vw, 2.6rem);
+}
+
+h2 {
+  font-size: clamp(1.55rem, 5vw, 2.25rem);
+}
+
+h3 {
+  font-size: clamp(1.05rem, 4vw, 1.65rem);
+}
+
+.hero-title {
+  font-size: 3.5rem;
+}
+
+nav {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--color-brown);
+}
+
+button {
+  cursor: pointer;
+  padding: 16px;
+  text-transform: uppercase;
+  font-weight: 200;
+  border: none;
+}
+
+button.primary {
+  background: var(--color-brown);
+  color: var(--color-grey-super-light);
+}
+
+button.primary:hover {
+  background: var(--color-brown-light);
+}
+
+button.secondary {
+  background: transparent;
+  border: 1px solid var(--color-black);
+  color: var(--color-black);
+}
+
+button.secondary:hover {
+  background: var(--color-black);
+  color: var(--color-grey-super-light);
+}
+
+strong {
+  color: var(--color-brown);
+}
+
+a {
+  text-transform: uppercase;
+  color: var(--color-grey);
+  text-decoration: none;
+  position: relative;
+}
+
+a:hover {
+  color: var(--color-brown);
+}
+
+a.product-link:after {
+  content: url("/assets/icons/icon-arrow-right.svg");
+  margin-left: 8px;
+  height: 100%;
+  width: 100%;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+input {
+  padding: 16px 32px;
+  border-radius: 5px;
+}

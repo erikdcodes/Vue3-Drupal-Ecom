@@ -1,0 +1,9 @@
+:root {
+  --color-brown: #d87d4a;
+  --color-brown-light: #fbaf85;
+  --color-black: #101010;
+  --color-grey: #7f8083;
+  --color-grey-light: #f1f1f1;
+  --color-grey-super-light: #fafafa;
+  --padding-inline: max(calc((100vw - 1140px) / 2), 32px);
+}

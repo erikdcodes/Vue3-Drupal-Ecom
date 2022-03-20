@@ -1,11 +1,10 @@
 <script setup></script>
 
 <template>
-  <h1>hello</h1>
-
   <RouterView />
 </template>
 
 <style>
-@import "@/assets/base.css";
+@import "@/assets/global.css";
+@import "@/assets/variables.css";
 </style>
