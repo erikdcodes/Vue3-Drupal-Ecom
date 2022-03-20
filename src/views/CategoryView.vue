@@ -2,7 +2,7 @@
 import { ref, onMounted } from "vue";
 import { useRoute } from "vue-router";
 
-import DefaultLayout from "@/Layouts/DefaultLayout.vue";
+import DefaultLayout from "@/layouts/DefaultLayout.vue";
 import CategoryCTACards from "@/components/CategoryCTACards.vue";
 import { getCategoryProducts } from "@/utils/getCategoryProducts.js";
 
