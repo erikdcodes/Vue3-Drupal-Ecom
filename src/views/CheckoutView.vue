@@ -1,5 +1,5 @@
 <script setup>
-import DefaultLayout from "@/Layouts/DefaultLayout.vue";
+import DefaultLayout from "@/layouts/DefaultLayout.vue";
 import { cartItems, priceTotal } from "@/myStore/cartStore.js";
 import CartProduct from "@/components/CartProduct.vue";
 import Cart from "@/components/Cart.vue";
