@@ -125,7 +125,7 @@ const handleAddToCart = (item, pCount) => {
           <img :src="image.url" :alt="image.alt" />
         </div>
       </section>
-      <section class="related-products-section">
+      <!-- <section class="related-products-section">
         <h2>You May Also Like</h2>
         <div class="related-products-container">
           <div
@@ -144,7 +144,7 @@ const handleAddToCart = (item, pCount) => {
             </a>
           </div>
         </div>
-      </section>
+      </section> -->
       <CategoryCTACards />
     </main>
   </DefaultLayout>
