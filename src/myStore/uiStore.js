@@ -1,11 +1,11 @@
-import { reactive } from "vue";
+import { reactive, computed } from "vue";
 
 const state = reactive({
   isMobileMenuOpen: false,
 });
 
 export const toggleIsMenuOpen = () => {
-  state.isMenuOpen = !state.isMenuOpen;
+  state.isMobileMenuOpen = !state.isMobileMenuOpen;
 };
 
-export const isMenuOpen = computed(() => state.isMenuOpen);
+export const isMobileMenuOpen = computed(() => state.isMobileMenuOpen);

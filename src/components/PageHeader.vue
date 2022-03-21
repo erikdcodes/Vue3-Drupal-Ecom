@@ -2,15 +2,24 @@
 import Logo from "./Logo.vue";
 import BarsIcon from "./svgIcons/BarsIcon.vue";
 import CartIcon from "./svgIcons/CartIcon.vue";
+import CloseIcon from "./svgIcons/CloseIcon.vue";
 import Cart from "../components/Cart.vue";
+import MobileMenu from "../components/MobileMenu.vue";
 import { toggleIsCartOpen, cartItems } from "../myStore/cartStore.js";
+import { toggleIsMenuOpen, isMobileMenuOpen } from "../myStore/uiStore.js";
 </script>
 
 <template>
   <Cart />
+  <MobileMenu />
   <header>
     <div class="mobile-menu-icon-container">
-      <BarsIcon fill="white" />
+      <BarsIcon
+        v-if="!isMobileMenuOpen"
+        @click="toggleIsMenuOpen"
+        fill="white"
+      />
+      <CloseIcon @click="toggleIsMenuOpen" v-else />
     </div>
     <Logo />
     <nav class="desktop-menu-container">
