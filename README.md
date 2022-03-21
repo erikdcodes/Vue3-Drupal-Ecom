@@ -1,29 +1,17 @@
-# .
+# Audiophile Ecommerce - VUE + Drupal
 
-This template should help get you started developing with Vue 3 in Vite.
+Audiophile is an ecommerce demo built using Vue 3 and Drupal RESTful API. Developed and deployed a high fidelity ecommerce website originally desigend by [Frontend Mentor](https://www.frontendmentor.io/) from a Figma Mockup.
 
-## Recommended IDE Setup
+## Built With
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
+- Vue 3
+- Drupal RESTful API
+- Mobile First Development
+- Figma Design Tools
+- Composition API
+- Local Storage
 
-## Customize configuration
+### Screenshot
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+Screenshot of deployed site:
+![Screenshot](./public/audiophile_screenshots.jpg)
