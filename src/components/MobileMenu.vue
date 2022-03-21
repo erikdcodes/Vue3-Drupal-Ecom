@@ -1,5 +1,9 @@
 <script setup>
+import { watch } from "vue";
 import { isMobileMenuOpen } from "@/myStore/uiStore.js";
+import { toggleBodyScroll } from "@/utils/toggleBodyScroll.js";
+
+watch(isMobileMenuOpen, () => toggleBodyScroll(isMobileMenuOpen));
 </script>
 
 <template>
@@ -28,7 +32,7 @@ import { isMobileMenuOpen } from "@/myStore/uiStore.js";
   position: absolute;
   height: calc(100vh - 90px);
   width: 100vw;
-  z-index: 999;
+  z-index: 990;
 }
 .mobile-menu-container {
   height: 90px;

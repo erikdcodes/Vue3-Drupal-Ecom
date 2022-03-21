@@ -8,16 +8,9 @@ import {
   priceTotal,
   clearCart,
 } from "@/myStore/cartStore.js";
+import { toggleBodyScroll } from "@/utils/toggleBodyScroll.js";
 
-const toggleBodyScroll = () => {
-  if (isCartOpen.value === true) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "visible";
-  }
-};
-
-watch(isCartOpen, () => toggleBodyScroll());
+watch(isCartOpen, () => toggleBodyScroll(isCartOpen));
 </script>
 
 <template>
