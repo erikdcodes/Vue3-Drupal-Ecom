@@ -41,6 +41,11 @@
 @media (min-width: 760px) {
   .hero-section {
     background-image: url("@/assets/images/home/image-hero.jpg");
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .title-container {
+    max-width: 400px;
   }
 }
 </style>
