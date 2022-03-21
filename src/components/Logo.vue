@@ -1,6 +1,6 @@
 <template>
   <div class="logo-container">
-    <span class="logo">audiophile</span>
+    <a href="/" class="logo">audiophile</a>
   </div>
 </template>
 
@@ -9,5 +9,6 @@
   color: #fff;
   font-size: 1.5rem;
   font-weight: 700;
+  text-transform: lowercase;
 }
 </style>
