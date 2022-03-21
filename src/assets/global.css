@@ -118,3 +118,15 @@ input {
   outline: 1px solid var(--color-grey-light);
   border: 1px solid var(--color-grey-light);
 }
+
+@keyframes pulse {
+  0% {
+    background: #f1f1f1;
+  }
+  50% {
+    background: #e7e6e6;
+  }
+  100% {
+    background: #f1f1f1;
+  }
+}

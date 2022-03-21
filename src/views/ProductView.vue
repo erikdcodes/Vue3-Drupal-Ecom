@@ -2,6 +2,7 @@
 import { ref, onBeforeMount, computed } from "vue";
 import { useRoute } from "vue-router";
 
+import ProductCardSkeleton from "@/components/ProductCardSkeleton.vue";
 import ProductCounter from "@/components/ProductCounter.vue";
 import DefaultLayout from "@/layouts/DefaultLayout.vue";
 import CategoryCTACards from "@/components/CategoryCTACards.vue";
@@ -13,7 +14,7 @@ import {
 } from "@/myStore/cartStore.js";
 
 // states
-const featuredIsLoading = ref(false);
+const isLoading = ref(true);
 const productCount = ref(1);
 const product = ref({});
 const addButtonText = ref("Add To Cart");
@@ -26,6 +27,7 @@ const { id } = route.params;
 onBeforeMount(async () => {
   const thisProduct = await getSingleProduct(id);
   product.value = thisProduct[0];
+  isLoading.value = false;
 });
 
 // methods / functions
@@ -55,11 +57,11 @@ const handleAddToCart = (item, pCount) => {
 
 <template>
   <DefaultLayout :includeHeroSection="false">
-    <main v-if="product">
-      <header class="product-header">
+    <main>
+      <ProductCardSkeleton v-if="isLoading" />
+      <header v-else class="product-header">
         <div class="grid-left">
-          <div v-if="featuredIsLoading" class="image-placeholder"></div>
-          <div v-else class="featured-image-container">
+          <div class="featured-image-container">
             <img
               class="featured-image"
               v-if="product.field_featured_image"
@@ -287,6 +289,7 @@ img {
 
   .featured-image {
     min-height: 550px;
+    max-width: 550px;
   }
 
   .features-section {

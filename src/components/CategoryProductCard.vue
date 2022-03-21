@@ -60,9 +60,9 @@ console.log(props.index % 2);
   margin-bottom: 32px;
 }
 .product-image {
-  max-width: 250px;
   height: 100%;
   width: 100%;
+  max-width: 250px;
   max-height: 250px;
   object-fit: cover;
 }
