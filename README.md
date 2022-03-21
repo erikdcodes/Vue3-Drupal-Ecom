@@ -1,6 +1,6 @@
 # Audiophile Ecommerce - VUE + Drupal
 
-Audiophile is an ecommerce demo built using Vue 3 and Drupal RESTful API. Developed and deployed an ecommerce website originally desigend by [Frontend Mentor](https://www.frontendmentor.io/) from a Figma Mockup.
+Audiophile is an ecommerce demo built using Vue 3 and Drupal RESTful API. Developed and deployed an ecommerce website originally designed by [Frontend Mentor](https://www.frontendmentor.io/) from a Figma Mockup.
 
 Live website: https://vue3-drupal.netlify.app/
 
