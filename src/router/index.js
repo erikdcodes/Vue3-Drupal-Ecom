@@ -17,6 +17,12 @@ const router = createRouter({
       component: () => import("../views/CategoryView.vue"),
     },
     {
+      path: "/checkout",
+      name: "checkout",
+      component: () => import("../views/CheckoutView.vue"),
+    },
+
+    {
       path: "/",
       name: "home",
       component: HomeView,
