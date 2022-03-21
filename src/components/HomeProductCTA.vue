@@ -33,7 +33,7 @@ const props = defineProps({
 .cta-container {
   min-height: 200px;
   margin-bottom: 64px;
-  background: url("~/assets/images/home/pattern-circles.svg") top no-repeat,
+  background: url("/home/pattern-circles.svg") top no-repeat,
     linear-gradient(45deg, rgba(155, 155, 155, 0.2), rgba(73, 73, 73, 0.3));
 
   background-size: cover;
